@@ -35,6 +35,44 @@ import Foundation
 
 
 
+// MARK: 2. Task. - done
+//348597 => [7,9,5,8,4,3]
+//0 => [0]
+
+//func digitize(_ num:Int) -> [Int] {
+//    return String(num).reversed().map { Int(String($0))! }
+//}
+//digitize(348597)
+
+
+
+//MARK: 3. Task. - done
+//[1, 2, 3] --> [2, 4, 6]
+
+//func maps(a : Array<Int>) -> Array<Int> {
+//    return a.map { $0 * 2 }
+//}
+//
+//maps(a: [1, 2, 3])
+
+
+
+//MARK: 4. Task. - done
+
+//You get an array of numbers, return the sum of all of the positives ones.
+//
+//Example [1,-4,7,12] => 1 + 7 + 12 = 20
+//
+//Note: if there is nothing to sum, the sum is default to 0.
+
+
+//func sumOfPositives (_ numbers: [Int] ) -> Int {
+//
+//    return numbers.filter { $0 > 0 }.reduce(0, +)
+//}
+//
+//sumOfPositives([])
+
 //MARK: 5. Task. - done
 //Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
 //
@@ -107,39 +145,34 @@ import Foundation
 
 
 
-//MARK: 9. Task. - not done
+//MARK: 9. Task. -  done
 //Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
 //Return your answer as a number.
 
 //func sumMix(_ arr: [Any]) -> Int {
+//
 //    var resultArray: [Int] = []
 //
 //    for item in arr {
-//        if item is String {
-//            resultArray.append(Int(item))
-//        }
-//        if item is Int {
-//            resultArray.append(item)
-//        }
+//       if let str = item as? String {
+//           resultArray.append(Int(str) ?? 0)
+//       }
+//       else {
+//           resultArray.append(item as? Int ?? 0)
+//       }
 //    }
-//
 //    return resultArray.reduce(0, +)
 //}
+//
+//print(sumMix(["5", "0", 9, 3, 2, 1, "9", 6, 7]))
 
 
-func sumMix(_ arr: [Any]) -> Int {
-    
-    var resultArray: [Int] = []
-    
-    for item in arr {
-       if let str = item as? String {
-           resultArray.append(Int(str) ?? 0)
-       }
-       else {
-           resultArray.append(item as? Int ?? 0)
-       }
-    }
-    return resultArray.reduce(0, +)
-}
 
-print(sumMix(["5", "0", 9, 3, 2, 1, "9", 6, 7]))
+//MARK: 10. Task. -  done
+//Complete the square sum function so that it squares each number passed into it and then sums the results together.
+//For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
+
+//func squareSum(_ vals: [Int]) -> Int {
+//    return vals.map { $0 * $0 }.reduce(0, +)
+//}
+//print(squareSum([1, 2, 2]))
