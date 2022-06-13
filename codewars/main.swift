@@ -127,7 +127,7 @@ import Foundation
 
 
 
-//MARK: 8. Task. - not done
+//MARK: 8. Task. - done
 //Create a function take that takes an Array<Int> and an Int, n, and returns an Array<Int> containing the first up to n elements from the array.
 
 //func take(_ arr: [Int], _ n: Int) -> [Int] {
@@ -233,3 +233,41 @@ import Foundation
 //}
 
 
+
+//MARK: 13. Task. - done
+//Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+//
+//For example:
+//
+//summation(2) -> 3
+//1 + 2
+//
+//summation(8) -> 36
+//1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+
+
+//func summation(_ n: Int) -> Int {
+//    return n * (n + 1) / 2 // Gauss formula
+//}
+//print(summation(213))
+
+
+
+//MARK: 14. Task. - done
+//Your task in this kata is to implement a function that calculates the sum of the integers inside a string. For example, in the string "The30quick20brown10f0x1203jumps914ov3r1349the102l4zy dog", the sum of the integers is 3635.
+//
+//Note: only positive integers will be tested.
+
+//func sumOfIntegersInString(_ string: String) -> Int {
+//
+//    var resultArray: [Int] = []
+//    let stringArray = string.components(separatedBy: CharacterSet.decimalDigits.inverted)
+//    for item in stringArray {
+//        if let number = Int(item) {
+//            resultArray.append(number)
+//        }
+//    }
+//    return resultArray.reduce(0, +)
+//}
+//
+//print(sumOfIntegersInString("The30quick20brown10f0x1203jumps914ov3r1349the102l4zy dog"))
