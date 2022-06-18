@@ -271,3 +271,242 @@ import Foundation
 //}
 //
 //print(sumOfIntegersInString("The30quick20brown10f0x1203jumps914ov3r1349the102l4zy dog"))
+
+
+
+//MARK: 15. Task. - done
+//Make a simple function called greet that returns the most-famous "hello world!".
+
+//func greet() -> String {
+//    return  "hello world!"
+//}
+
+
+
+//MARK: 16. Task. - done
+//Clock shows h hours, m minutes and s seconds after midnight.
+
+//Your task is to write a function which returns the time since midnight in milliseconds.
+
+//Example:
+
+//h = 0
+//m = 1
+//s = 1
+
+//result = 61000
+
+// 1 hour = 3600000
+// 1 min = 60000
+// 1 sec = 1000
+
+// heroes.append(contentsOf:[abaddon, ember, gondor])
+
+//func past2(_ h: Int, _ m: Int, _ s: Int) -> Int {
+//    var resultArray: [Int] = []
+//    resultArray.append(contentsOf: [h*3600000, m*60000, s*1000])
+//    return resultArray.reduce(0, +)
+//}
+//
+//func past(_ h: Int, _ m: Int, _ s: Int) -> Int {
+//    return h*3600000 + m*60000 + s*1000
+//}
+
+
+
+//MARK: 17. Task. - not done
+
+// https://www.codewars.com/kata/566fc12495810954b1000030/train/swift
+
+//Take an integer n (n >= 0) and a digit d (0 <= d <= 9) as an integer.
+//
+//Square all numbers k (0 <= k <= n) between 0 and n.
+//
+//Count the numbers of digits d used in the writing of all the k**2.
+//
+//Call nb_dig (or nbDig or ...) the function taking n and d as parameters and returning this count.
+
+//n = 10, d = 1
+//the k*k are 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100
+//We are using the digit 1 in: 1, 16, 81, 100. The total count is then 4.
+
+//func nbDig(_ n: Int, _ d: Int) -> Int {
+//    var firstArray = Array(0...n).map { $0*$0 }
+//
+//    var stringArray = firstArray.map { String($0) }
+//
+//    var joinedArray = stringArray.joined()
+//
+//    var result = joinedArray.characters.filter { $0 == "\(d)" }.count
+//    return result
+//}
+//
+//print(nbDig(25, 1))
+
+
+
+//MARK: 18. Task. - done
+// Find the total sum of internal angles (in degrees) in an n-sided simple polygon. N will be greater than 2.
+
+//func angle(_ n: Int) -> Int {
+//    return 180*(n-2)
+//}
+
+
+
+//MARK: 19. Task. - done
+//The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+//
+//Task
+//
+//Given a year, return the century it is in.
+//
+//Examples
+//
+//1705 --> 18
+//1900 --> 19
+//1601 --> 17
+//2000 --> 20
+
+//func century(_ year: Int) -> Int {
+//    return Int((Double(year) / 100).rounded(.up))
+//}
+
+
+
+//MARK: 20. Task. - done
+//func reverse(_ str: String) -> String {
+//    return String(str.reversed())
+//}
+
+
+//MARK: 21. Task. - done
+//func booleanToString(_ b: Bool) -> String {
+//  return String(b)
+//}
+
+//func booleanToString(_ b: Bool) -> String {
+//  return "\(b)"
+//}
+
+
+//MARK: 22. Task. - done
+//func check<T: Equatable>(_ a: [T], _ x: T) -> Bool {
+//    return a.contains(x)
+//}
+
+
+//MARK: 23. Task. - done
+//func descendingOrder(of number: Int) -> Int {
+//  return Int(String("\(number)".sorted(by: >))) ?? 0
+//}
+
+
+//MARK: 24. Task. - done
+//  replaceAll(replaceAll(array: [1,2,2], old: 1, new: 2) // [2,2,2]
+
+//func replaceAll<T: Equatable>(array: [T], old: T, new: T) -> [T] {
+//    return array.map { $0 == old ? new : $0 }
+//}
+
+
+//MARK: 25. Task. - done
+//func switchItUp(_ number: Int) -> String {
+//    switch number {
+//    case 0: return "Zero"
+//    case 1: return "One"
+//    case 2: return "Two"
+//    case 3: return "Three"
+//    case 4: return "Four"
+//    case 5: return "Five"
+//    case 6: return "Six"
+//    case 7: return "Seven"
+//    case 8: return "Eight"
+//    case 9: return "Nine"
+//    default:
+//        "wrong number"
+//    }
+//    return ""
+//}
+
+
+//MARK: 26. Task. - done
+// toLeetSpeak("LEET") returns "1337"
+
+//{
+//  A : '@',
+//  B : '8',
+//  C : '(',
+//  D : 'D',
+//  E : '3',
+//  F : 'F',
+
+//  G : '6',
+//  H : '#',
+//  I : '!',
+//  J : 'J',
+//  K : 'K',
+//  L : '1',
+//  M : 'M',
+//  N : 'N',
+//  O : '0',
+//  P : 'P',
+//  Q : 'Q',
+//  R : 'R',
+//  S : '$',
+//  T : '7',
+//  U : 'U',
+//  V : 'V',
+//  W : 'W',
+//  X : 'X',
+//  Y : 'Y',
+//  Z : '2'
+//}
+
+//func toLeetSpeak(_ s : String) -> [String] {
+//    var notJoinedArray: [String] = []
+//
+//    switch s {
+//    case s. "A": notJoinedArray.append("@")
+//    case "B": notJoinedArray.append("8")
+//    case "C": notJoinedArray.append("(")
+//    case "D": notJoinedArray.append("D")
+//    case "E": notJoinedArray.append("3")
+//    case "F": notJoinedArray.append("F")
+//    case "G": notJoinedArray.append("6")
+//    case "H": notJoinedArray.append("#")
+//    case "I": notJoinedArray.append("!")
+//    case "J": notJoinedArray.append("J")
+//    case "K": notJoinedArray.append("K")
+//    case "L": notJoinedArray.append("1")
+//    case "M": notJoinedArray.append("M")
+//    case "N": notJoinedArray.append("N")
+//    case "O": notJoinedArray.append("0")
+//    case "P": notJoinedArray.append("P")
+//    case "Q": notJoinedArray.append("Q")
+//    case "R": notJoinedArray.append("R")
+//    case "S": notJoinedArray.append("$")
+//    case "T": notJoinedArray.append("7")
+//    case "U": notJoinedArray.append("U")
+//    case "V": notJoinedArray.append("V")
+//    case "W": notJoinedArray.append("W")
+//    case "X": notJoinedArray.append("X")
+//    case "Y": notJoinedArray.append("Y")
+//    case "Z": notJoinedArray.append("2")
+//
+//    default:
+//        "error"
+//    }
+//    return notJoinedArray.joined()
+//}
+//
+//print(toLeetSpeak("LEET"))
+
+//MARK: 27. Task. - done
+//func hero(bullets: Int, dragons: Int) -> Bool {
+//    if bullets/dragons >= 2 {
+//        return true
+//    } else {
+//        return false
+//    }
+//}
