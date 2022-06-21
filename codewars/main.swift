@@ -314,7 +314,7 @@ import Foundation
 
 
 
-//MARK: 17. Task. - not done
+//MARK: 17. Task. - done
 
 // https://www.codewars.com/kata/566fc12495810954b1000030/train/swift
 
@@ -330,15 +330,19 @@ import Foundation
 //the k*k are 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100
 //We are using the digit 1 in: 1, 16, 81, 100. The total count is then 4.
 
+//var stringArray = squaresArray.map { String($0) }
+//
+//var joinedString = stringArray.joined()
+//
+//let myNumbers = joinedString.filter { "\(d)".contains($0) }.count
+
+
 //func nbDig(_ n: Int, _ d: Int) -> Int {
-//    var firstArray = Array(0...n).map { $0*$0 }
-//
-//    var stringArray = firstArray.map { String($0) }
-//
-//    var joinedArray = stringArray.joined()
-//
-//    var result = joinedArray.characters.filter { $0 == "\(d)" }.count
-//    return result
+//    return Array(0...n)
+//        .map { String($0*$0) }
+//        .joined()
+//        .filter { "\(d)".contains($0)}
+//        .count
 //}
 //
 //print(nbDig(25, 1))
@@ -430,7 +434,7 @@ import Foundation
 //}
 
 
-//MARK: 26. Task. - done
+//MARK: 26. Task. - not done
 // toLeetSpeak("LEET") returns "1337"
 
 //{
@@ -440,7 +444,6 @@ import Foundation
 //  D : 'D',
 //  E : '3',
 //  F : 'F',
-
 //  G : '6',
 //  H : '#',
 //  I : '!',
@@ -463,44 +466,44 @@ import Foundation
 //  Z : '2'
 //}
 
-//func toLeetSpeak(_ s : String) -> [String] {
+//func toLeetSpeak(_ s : String) -> String {
 //    var notJoinedArray: [String] = []
+//    for character in s {
+//        switch character {
+//        case "A": notJoinedArray.append("@")
+//        case "B": notJoinedArray.append("8")
+//        case "C": notJoinedArray.append("(")
+//        case "D": notJoinedArray.append("D")
+//        case "E": notJoinedArray.append("3")
+//        case "F": notJoinedArray.append("F")
+//        case "G": notJoinedArray.append("6")
+//        case "H": notJoinedArray.append("#")
+//        case "I": notJoinedArray.append("!")
+//        case "J": notJoinedArray.append("J")
+//        case "K": notJoinedArray.append("K")
+//        case "L": notJoinedArray.append("1")
+//        case "M": notJoinedArray.append("M")
+//        case "N": notJoinedArray.append("N")
+//        case "O": notJoinedArray.append("0")
+//        case "P": notJoinedArray.append("P")
+//        case "Q": notJoinedArray.append("Q")
+//        case "R": notJoinedArray.append("R")
+//        case "S": notJoinedArray.append("$")
+//        case "T": notJoinedArray.append("7")
+//        case "U": notJoinedArray.append("U")
+//        case "V": notJoinedArray.append("V")
+//        case "W": notJoinedArray.append("W")
+//        case "X": notJoinedArray.append("X")
+//        case "Y": notJoinedArray.append("Y")
+//        case "Z": notJoinedArray.append("2")
 //
-//    switch s {
-//    case s. "A": notJoinedArray.append("@")
-//    case "B": notJoinedArray.append("8")
-//    case "C": notJoinedArray.append("(")
-//    case "D": notJoinedArray.append("D")
-//    case "E": notJoinedArray.append("3")
-//    case "F": notJoinedArray.append("F")
-//    case "G": notJoinedArray.append("6")
-//    case "H": notJoinedArray.append("#")
-//    case "I": notJoinedArray.append("!")
-//    case "J": notJoinedArray.append("J")
-//    case "K": notJoinedArray.append("K")
-//    case "L": notJoinedArray.append("1")
-//    case "M": notJoinedArray.append("M")
-//    case "N": notJoinedArray.append("N")
-//    case "O": notJoinedArray.append("0")
-//    case "P": notJoinedArray.append("P")
-//    case "Q": notJoinedArray.append("Q")
-//    case "R": notJoinedArray.append("R")
-//    case "S": notJoinedArray.append("$")
-//    case "T": notJoinedArray.append("7")
-//    case "U": notJoinedArray.append("U")
-//    case "V": notJoinedArray.append("V")
-//    case "W": notJoinedArray.append("W")
-//    case "X": notJoinedArray.append("X")
-//    case "Y": notJoinedArray.append("Y")
-//    case "Z": notJoinedArray.append("2")
-//
-//    default:
-//        "error"
+//        default: notJoinedArray.append("\(character)")
+//        }
 //    }
 //    return notJoinedArray.joined()
 //}
 //
-//print(toLeetSpeak("LEET"))
+//print(toLeetSpeak("HELLO WORLD"))
 
 //MARK: 27. Task. - done
 //func hero(bullets: Int, dragons: Int) -> Bool {
@@ -509,4 +512,25 @@ import Foundation
 //    } else {
 //        return false
 //    }
+//}
+
+
+
+//MARK: 28. Task. - done
+//func sumOfMinimums(_ numbers: [[Int]]) -> Int {
+//    return numbers[0].min() ?? 0 + numbers[1].min() ?? 0 + numbers[2].min() ?? 0 + numbers[3].min() ?? 0 + numbers[4].min() ?? 0
+//}
+
+
+//func sumOfMinimums(_ numbers: [[Int]]) -> Int {
+//    var minValues = 0
+//    for array in numbers {
+//        minValues += array.min() ?? 0
+//    }
+//
+//    return minValues
+//}
+
+//func sumOfMinimums(_ numbers: [[Int]]) -> Int {
+//    return numbers.map { $0.min() ?? 0 }.reduce(0, +)
 //}
