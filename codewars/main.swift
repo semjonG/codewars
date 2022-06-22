@@ -518,11 +518,6 @@ import Foundation
 
 //MARK: 28. Task. - done
 //func sumOfMinimums(_ numbers: [[Int]]) -> Int {
-//    return numbers[0].min() ?? 0 + numbers[1].min() ?? 0 + numbers[2].min() ?? 0 + numbers[3].min() ?? 0 + numbers[4].min() ?? 0
-//}
-
-
-//func sumOfMinimums(_ numbers: [[Int]]) -> Int {
 //    var minValues = 0
 //    for array in numbers {
 //        minValues += array.min() ?? 0
@@ -534,3 +529,55 @@ import Foundation
 //func sumOfMinimums(_ numbers: [[Int]]) -> Int {
 //    return numbers.map { $0.min() ?? 0 }.reduce(0, +)
 //}
+
+
+
+//MARK: 29. Task. - done
+//func flip(_ direction: String, _ a: [Int]) -> [Int] {
+//    switch direction {
+//    case "R": return a.sorted()
+//    default: return a.sorted().reversed()
+//    }
+//}
+//print(flip("L", [1, 4, 5, 3, 5]))
+
+//func flip(_ direction: String, _ a: [Int]) -> [Int] {
+//     direction == "R" ? a.sorted() : a.sorted().reversed()
+//}
+//print(flip("R", [3, 2, 1, 2]))
+
+
+
+//MARK: 30. Task. - done
+
+//func quarter(of month: Int) -> Int {
+//    switch month {
+//    case 0...3: return 1
+//    case 4...6: return 2
+//    case 7...9: return 3
+//    default: return 4
+//    }
+//}
+
+
+
+//MARK: 31. Task. - done
+//func expressionMatter(_ a: Int, _ b: Int, _ c: Int) -> Int {
+//    return [a * (b + c), a * b * c, a + b * c, (a + b) * c, a + b + c].max() ?? 0
+//}
+//print(expressionMatter(1, 1, 1))
+
+
+
+//MARK: 32. Task. - done
+
+//func multi_table(_ number: Int) -> String {
+//     "1 * \(number) = \(number)\n2 * \(number) = \(2*number)\n3 * \(number) = \(3*number)\n4 * \(number) = \(4*number)\n5 * \(number) = \(5*number)\n6 * \(number) = \(6*number)\n7 * \(number) = \(7*number)\n8 * \(number) = \(8*number)\n9 * \(number) = \(9*number)\n10 * \(number) = \(10*number)"
+//}
+
+//MARK: 33. Task. - done
+
+//func reverseSeq(n: Int) -> [Int] {
+//    Array(1...n).reversed()
+//}
+//print(reverseSeq(n: 5))
