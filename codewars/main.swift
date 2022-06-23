@@ -587,6 +587,9 @@ import Foundation
 
 
 //MARK: 34. Task. - done
-func grow(_ arr: [Int]) -> Int {
-    arr.map { $0*$1 }
-}
+
+//func grow(_ arr: [Int]) -> Int {
+//    arr.reduce(1, *)
+//}
+//
+//print(grow([4,1,1,1,4]))
