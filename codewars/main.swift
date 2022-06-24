@@ -434,7 +434,7 @@ import Foundation
 //}
 
 
-//MARK: 26. Task. - not done
+//MARK: 26. Task. - done
 // toLeetSpeak("LEET") returns "1337"
 
 //{
@@ -504,6 +504,8 @@ import Foundation
 //}
 //
 //print(toLeetSpeak("HELLO WORLD"))
+
+
 
 //MARK: 27. Task. - done
 //func hero(bullets: Int, dragons: Int) -> Bool {
@@ -587,9 +589,100 @@ import Foundation
 
 
 //MARK: 34. Task. - done
+// перемножить все элементы в массиве
 
 //func grow(_ arr: [Int]) -> Int {
 //    arr.reduce(1, *)
 //}
 //
 //print(grow([4,1,1,1,4]))
+
+
+
+//MARK: 35. Task. - done
+//1 --> 0 (the first even number is 0)
+//3 --> 4 (the 3rd even number is 4 (0, 2, 4))
+//100 --> 198
+//1298734 --> 2597466
+
+//func nthEven(_ n: Int) -> Int {
+//    (n * 2) - 2
+//}
+//print(nthEven(1))
+
+
+
+//MARK: 36. Task. - done
+// вернуть первый непоследователный элемент (который не проходит условие "след элемент больше на 1")
+
+//func firstNonConsecutive (_ arr: [Int]) -> Int? {
+//  for (index, element) in arr.enumerated() {
+//        if index > 0 {
+//            if !(element == (arr[index - 1] + 1)) { return element }
+//        }
+//    }
+//    return nil
+//}
+//
+//func firstNonConsecutive (_ arr: [Int]) -> Int? {
+//  for i in 1..<arr.count {
+//    if arr[i] - arr[i-1] > 1 { return arr[i] }
+//  }
+//    return nil
+//}
+
+
+
+//MARK: 37. Task. - done
+//a string with size 6 should return :'101010'.
+//
+//with size 4 should return : '1010'.
+//
+//with size 12 should return : '101010101010'.
+
+//func stringy(_ size: Int) -> String {
+//    var result = ""
+//    var i = 1
+//    while size >= i {
+//        result += i % 2 == 0 ? "0" : "1"
+//        i += 1
+//    }
+//    return result
+//}
+//
+//func stringy(_ size: Int) -> String {
+//  return (0..<size).map { $0 % 2 == 0 ? "1" : "0" }.joined()
+//}
+
+
+
+//MARK: 38. Task. - done
+
+//func evenOrOdd(_ number:Int) -> String {
+//    number % 2 == 0 ? "Even" : "Odd"
+//}
+//
+//print(evenOrOdd(3))
+
+
+
+//MARK: 39. Task. - done
+//func boolToWord(_ bool: Bool) -> String {
+//    bool == true ? "Yes" : "No"
+//}
+
+
+
+//MARK: 40. Task. - done
+//func multiply(_ a: Double, _ b: Double) -> Double {
+//     a*b
+//}
+//
+//let multiply: (Double,Double) -> Double = {$0*$1}
+
+
+
+//MARK: 41. Task. - done
+func isDivisible(_ n: Int, _ x: Int, _ y: Int) -> Bool {
+    
+}
