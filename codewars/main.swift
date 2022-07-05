@@ -687,3 +687,70 @@ import Foundation
 //    n % x == 0 && n % y == 0 ? true : false
 //}
 
+
+
+//MARK: 42. Task. - done
+//For example, if the parameters passed are ([2, 2, 3], [5, 4, 1]), the volume of a is 12 and the volume of b is 20. Therefore, the function should return 8.
+//func findDifference(_ a: [Int], _ b: [Int]) -> Int {
+//    abs(a.reduce(1, *) - b.reduce(1, *))
+//}
+
+
+
+//MARK: 43. Task. - done
+//Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+// "15889923" -> "01111100"
+
+//func fakeBin(digits: String) -> String {
+//    String(digits.map { $0 < "5" ? "0" : "1" })
+//}
+
+
+//MARK: 44. Task. - done
+//func repeatStr(_ n: Int, _ string: String) -> String {
+//  String(repeating: string, count: n)
+//}
+
+
+
+//MARK: 45. Task. - done
+//1: -1
+//14: -14
+//-34: 34
+//func opposite(number: Double) -> Double {
+////    number * -1
+//    -number
+//}
+
+
+
+//MARK: 46. Task. - done
+//func greet(_ name: String) -> String {
+//    "Hello, \(name) how are you doing today?"
+//}
+
+
+
+//MARK: 47. Task. - done
+//Write function bmi that calculates body mass index (bmi = weight / height2).
+//
+//if bmi <= 18.5 return "Underweight"
+//
+//if bmi <= 25.0 return "Normal"
+//
+//if bmi <= 30.0 return "Overweight"
+//
+//if bmi > 30 return "Obese"
+
+//func bmi(_ weight: Int, _ height: Double) -> String {
+//    let index = (Double(weight) / (height*height))
+//    switch true {
+//    case index <= 18.5: return "Underweight"
+//    case index <= 25.0: return "Normal"
+//    case index <= 30.0: return "Overweight"
+//    case index > 30: return "Obese"
+//    default: return "wrong value"
+//    }
+//}
+
