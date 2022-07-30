@@ -788,3 +788,30 @@ import Foundation
 //func monkeyCount(_ n: Int) -> [Int] {
 //    Array(1...n)
 //}
+
+
+
+//MARK: 52. Task. - done
+//func getPlanetName(_ id: Int) -> String {
+//    
+//  switch id {
+//    case 1:
+//      return "Mercury"
+//    case 2:
+//      return "Venus"
+//    case 3:
+//      return "Earth"
+//    case 4:
+//      return "Mars"
+//    case 5:
+//      return "Jupiter"
+//    case 6:
+//      return "Saturn"
+//    case 7:
+//      return "Uranus"
+//    case 8:
+//      return "Neptune"
+//    default:
+//      return  "none"
+//  }
+//}
