@@ -842,3 +842,16 @@ import Foundation
 //    base % factor == 0 ? true : false
 //    // return base % factor == 0
 //}
+
+
+
+
+//MARK: 56. Task. - done
+//Create a function take that takes an Array<Int> and an Int, n, and returns an Array<Int> containing the first up to n elements from the array.
+
+//func take(_ arr: [Int], _ n: Int) -> [Int] {
+//    arr.isEmpty || n == 0 ? [] : Array(arr.prefix(n))
+////    Array(arr.prefix(n))
+//}
+
+
