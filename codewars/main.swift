@@ -855,3 +855,18 @@ import Foundation
 //}
 
 
+
+//MARK: 57. Task. - Not done "A wolf in sheep's clothing"
+//[sheep, sheep, sheep, sheep, sheep, wolf, sheep, sheep]   (YOU ARE HERE AT THE FRONT OF THE QUEUE)
+//   7      6      5      4      3            2      1
+//Examples
+//
+//Input: ["sheep", "sheep", "sheep", "wolf", "sheep"]
+//Output: "Oi! Sheep number 1! You are about to be eaten by a wolf!"
+//
+//Input: ["sheep", "sheep", "wolf"]
+//Output: "Pls go away and stop eating my sheep"
+
+func warnTheSheep(_ queue: [String]) -> String {
+     ? "Oi! Sheep number "\()"! You are about to be eaten by a wolf!" : "Pls go away and stop eating my sheep"
+}
