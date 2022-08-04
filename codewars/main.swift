@@ -867,6 +867,10 @@ import Foundation
 //Input: ["sheep", "sheep", "wolf"]
 //Output: "Pls go away and stop eating my sheep"
 
-func warnTheSheep(_ queue: [String]) -> String {
-     ? "Oi! Sheep number "\()"! You are about to be eaten by a wolf!" : "Pls go away and stop eating my sheep"
-}
+//func warnTheSheep(_ queue: [String]) -> String {
+//    var position: Int = Array(queue.reversed()).firstIndex(where: { $0 == "wolf" })!
+//
+//    return position == 0 ? "Pls go away and stop eating my sheep" : "Oi! Sheep number \(position)! You are about to be eaten by a wolf!"
+//}
+
+
