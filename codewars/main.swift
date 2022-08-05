@@ -856,7 +856,7 @@ import Foundation
 
 
 
-//MARK: 57. Task. - Not done "A wolf in sheep's clothing"
+//MARK: 57. Task. - Done "A wolf in sheep's clothing"
 //[sheep, sheep, sheep, sheep, sheep, wolf, sheep, sheep]   (YOU ARE HERE AT THE FRONT OF THE QUEUE)
 //   7      6      5      4      3            2      1
 //Examples
@@ -871,6 +871,16 @@ import Foundation
 //    var position: Int = Array(queue.reversed()).firstIndex(where: { $0 == "wolf" })!
 //
 //    return position == 0 ? "Pls go away and stop eating my sheep" : "Oi! Sheep number \(position)! You are about to be eaten by a wolf!"
+//}
+
+
+
+//MARK: 58. Task. - Done "Kata Example Twist"
+// https://www.codewars.com/kata/525c1a07bb6dda6944000031/train/swift
+// Add the value "codewars" to the array websites/Websites 1,000 times.
+
+//func KataTwist() -> Array<Any> {
+//  return Array(repeating: "codewars", count: 1000)
 //}
 
 
