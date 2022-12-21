@@ -688,9 +688,10 @@ import Foundation
 //}
 
 
-
+/*
 //MARK: 42. Task. - done
-//For example, if the parameters passed are ([2, 2, 3], [5, 4, 1]), the volume of a is 12 and the volume of b is 20. Therefore, the function should return 8.
+For example, if the parameters passed are ([2, 2, 3], [5, 4, 1]), the volume of a is 12 and the volume of b is 20. Therefore, the function should return 8.
+ */
 //func findDifference(_ a: [Int], _ b: [Int]) -> Int {
 //    abs(a.reduce(1, *) - b.reduce(1, *))
 //}
@@ -882,5 +883,41 @@ import Foundation
 //func KataTwist() -> Array<Any> {
 //  return Array(repeating: "codewars", count: 1000)
 //}
+
+
+//MARK: 59. Task. - Done
+/*
+// Для строки вида AAABBCCAA вывести A:5, B:2, C:2
+func stringToDictionary(someString: String) -> Dictionary<Character, Int> {
+
+    var result: Dictionary<Character, Int> = [:]
+
+    for character in someString {
+        if result[character] == nil {
+            result[character] = 1
+
+        } else {
+
+            result[character] = (result[character] ?? 0) + 1
+        }
+    }
+    return result
+}
+
+print(stringToDictionary(someString: "AAABBCCAA"))
+
+// обратная конвертация
+func dictionaryToString(someDictionary: Dictionary<Character, Int>) -> String {
+    var result = ""
+    
+    for (key, value) in someDictionary {
+        result.append("\(key)\(value)")
+    }
+    return result
+}
+    
+print(dictionaryToString(someDictionary: ["A":5, "B":2, "C":2]))
+*/
+
 
 
