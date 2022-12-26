@@ -946,5 +946,32 @@ print(dictionaryToString(someDictionary: ["A":5, "B":2, "C":2]))
      }
      return "Not found"
  }
-
  */
+
+
+//MARK: 61. Task. - Done
+// https://www.codewars.com/kata/55902c5eaa8069a5b4000083/train/swift
+/*
+ func formatMoney(_ val:Double) -> String {
+ //    let formatter = NumberFormatter()
+ //        formatter.numberStyle = .currency
+ //        formatter.maximumFractionDigits = 2
+ //        formatter.roundingMode = .halfUp
+ //        formatter.usesGroupingSeparator = false
+ //        return formatter.string(from: NSNumber(value: val)) ?? ""
+     String(format: "$%.2f", val)
+ }
+ */
+
+//MARK: 62. Task. - Done
+// https://www.codewars.com/kata/546e2562b03326a88e000020/train/swift
+/*
+ func squareDigits(_ num: Int) -> Int {
+     Int(String(num)
+         .compactMap({$0.wholeNumberValue})
+         .map { $0*$0 }
+         .map(String.init).joined()) ?? 0
+ }
+ */
+
+
